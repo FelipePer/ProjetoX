@@ -1,0 +1,100 @@
+@import url(<link href="https: //fonts.googleapis.com/css2?family= Poppins & display=swap" rel=" stylesheet">);
+
+body {
+    margin: 0; /*Sem margem em ambos os lados*/
+    height: 100vh; /*determina a altura da área do conteúdo de um elemento*/
+    background-color: #f3ebeb; /*Cor de fundo*/
+
+}
+.logoif {
+    display: flex;
+    margin: 0%;
+    width: 22.4%;
+    background-color: #f3ebeb;
+}
+h2 {
+    margin: 0%;
+    position: relative;
+    margin-left: 5%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 100px;
+    color: #f3ebeb;
+    -webkit-text-stroke: #1B6F14;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    font-weight: 700;
+    color: #f3ebeb;
+    border-right: 2px solid #f3ebeb;
+    overflow: hidden;
+    animation: animate 1.4s linear both;
+}
+@keyframes animate{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100.2%;
+    }
+    
+}
+.gn {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.gn span {
+    text-transform: uppercase;
+    display: block;
+}
+.text {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    background: #f3ebeb;
+    position: relative;
+    animation: text 2s 1;
+}
+.text1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #1B6F14;
+    font-weight: 700;
+}
+
+@keyframes text {
+0%
+{
+    color: #f3ebeb;
+    margin-bottom: -2%;
+}
+40%
+    {
+        letter-spacing: 20px;
+        margin-bottom: -3%;
+    }
+    70  %{
+        letter-spacing: 0px;
+        margin-bottom: -2%;
+    }
+
+}
